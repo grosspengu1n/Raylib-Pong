@@ -43,9 +43,9 @@ Color HexToColor(const char* hex)
 
 void DrawMenu()
 {
-    DrawText("PONG GAME", screenWidth / 4, screenHeight / 4, 60, HexToColor("#79F2E6"));
-    DrawText("Press (1) for Singleplayer", screenWidth / 4, screenHeight / 2 - 40, 40, HexToColor("#7630D9"));
-    DrawText("Press (2) for Co-op", screenWidth / 4, screenHeight / 2, 40, HexToColor("#F06BF2"));
+    DrawText("PONG GAME", screenWidth / 4, screenHeight / 4, 50, HexToColor("#79F2E6"));
+    DrawText("Press (1) for Singleplayer", screenWidth / 4, screenHeight / 2 - 40, 30, HexToColor("#7630D9"));
+    DrawText("Press (2) for Co-op", screenWidth / 4, screenHeight / 2, 30, HexToColor("#F06BF2"));
 }
 
 int main()
