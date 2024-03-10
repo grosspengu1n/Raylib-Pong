@@ -90,10 +90,16 @@ int main()
 
         if (!isTwoPlayerMode)
         {
-            if (ballPos.y < rightPaddlePos.y + paddleHeight / 2 && rightPaddlePos.y > 0)
-                rightPaddlePos.y -= 3;
-            else if (ballPos.y > rightPaddlePos.y + paddleHeight / 2 && rightPaddlePos.y < screenHeight - paddleHeight)
-                rightPaddlePos.y += 3;
+            if (ballPos.y + ballSize / 2 < rightPaddlePos.y + paddleHeight / 2)
+            {
+                if (rightPaddlePos.y > 0)
+                    rightPaddlePos.y -= 5;
+            }
+            else if (ballPos.y + ballSize / 2 > rightPaddlePos.y + paddleHeight / 2)
+            {
+                if (rightPaddlePos.y < screenHeight - paddleHeight)
+                    rightPaddlePos.y += 5;
+            }
         }
         else
         {
